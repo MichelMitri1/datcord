@@ -1,0 +1,200 @@
+.chatlogs__container {
+  background-color: RGB(43, 45, 49);
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+}
+
+.chatlogs__searchWrapper {
+  padding: 12px;
+  border-bottom: 3px solid RGB(32, 34, 37);
+  position: sticky;
+}
+
+.chatlogs__search {
+  background-color: RGB(30, 31, 34);
+  border: none;
+  height: 26px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.chatlogs__wrapper {
+  overflow-y: scroll;
+  height: 85.1%;
+}
+
+.chatlogs__wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatlogs__wrapper::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: transparent;
+}
+
+.chatlogs__wrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: RGB(26, 27, 30);
+}
+
+.chatlogs__optionsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  gap: 2px;
+}
+
+.chatlogs__option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.chatlogs__option:hover {
+  background-color: RGB(64, 66, 73);
+  border-radius: 4px;
+}
+
+.chatlogs__optionPara {
+  color: RGB(148, 155, 164);
+}
+
+.chatlogs__createDm {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0px;
+  padding: 10px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin: 4px 0px;
+}
+
+.friend__name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+}
+
+.chatlogs__friendsWrapper {
+  margin: 8px;
+}
+
+.friend:hover {
+  background-color: RGB(64, 66, 73);
+  border-radius: 4px;
+}
+
+.pfp__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfp {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: 150ms all ease;
+  cursor: pointer;
+}
+
+.friend__name {
+  color: RGB(148, 155, 164);
+}
+
+.user__container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+  justify-content: space-between;
+  background-color: RGB(35, 36, 40);
+  padding: 3px;
+  position: sticky;
+}
+
+.user__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.user__wrapper:hover {
+  background-color: RGB(64, 66, 73);
+  border-radius: 4px;
+}
+
+.user__username {
+  font-size: 13px;
+  color: white;
+  width: 80px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user__para {
+  font-size: 12px;
+  color: RGB(148, 155, 164);
+  width: 85px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+}
+.user__pfp {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.user__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 4px;
+}
+
+.button {
+  padding: 4px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: RGB(64, 66, 73);
+  border-radius: 4px;
+}
+
+@media (max-width: 850px) {
+  .chatlogs__container {
+    transform: translateX(75px);
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+  }
+
+  .user__container {
+    display: none;
+  }
+
+  .chatlogs__wrapper {
+    height: 87.4%;
+  }
+}
+
+.not-displayed {
+  display: none;
+}

@@ -1,0 +1,32 @@
+.main__container {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.hello {
+  display: none;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+  top: 93.7%;
+  padding: 4px 24px;
+}
+
+.user__pfp {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: "pointer";
+}
+
+@media (max-width: 850px) {
+  .hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: rgb(17, 18, 19);
+  }
+}

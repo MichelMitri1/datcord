@@ -1,0 +1,224 @@
+.accessibilities__container {
+  background-color: RGB(49, 51, 56);
+  width: 100%;
+  height: 100vh;
+}
+
+.accessible__wrapper {
+  padding: 12px;
+}
+
+.hotbar__wrapper {
+  padding: 12px;
+  border-bottom: 3px solid rgb(43, 45, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.hotbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 1px solid grey;
+  padding-right: 18px;
+}
+
+.friends__para {
+  color: white;
+}
+
+.hotbar__option {
+  color: RGB(128, 132, 142);
+  cursor: pointer;
+}
+
+.add__friend {
+  color: white;
+  background-color: RGB(36, 128, 70);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.accessibilities__wrapper {
+  width: 100%;
+  display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.friends__listContainer {
+  flex: 1;
+  padding: 16px 24px;
+  width: 100%;
+}
+
+.active__wrapper {
+  flex: 0.4;
+}
+
+.search {
+  width: 100%;
+  outline: none;
+  color: white;
+  background-color: RGB(30, 31, 34);
+  border: none;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0px 8px;
+  margin-bottom: 32px;
+}
+
+.friends__listWrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+  overflow-y: scroll;
+  height: 76vh;
+}
+
+.friends__listWrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.friends__listWrapper::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: RGB(43, 45, 49);
+}
+
+.friends__listWrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: RGB(26, 27, 30);
+}
+.friendList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.293);
+  padding: 12px 8px;
+}
+
+.friend__details {
+  display: flex;
+  gap: 8px;
+}
+
+.friendList:hover {
+  background-color: RGB(64, 66, 73);
+  border-radius: 4px;
+}
+
+.friends__name {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.friends__para {
+  font-size: 14px;
+  color: RGB(148, 155, 164);
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+  font-weight: 500;
+}
+.friends__pfp {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.friend__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.addFriend__wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.addFriend__button {
+  padding: 0px 24px;
+  cursor: pointer;
+}
+
+.addFriend__input {
+  width: 100%;
+  outline: none;
+  color: white;
+  background-color: RGB(30, 31, 34);
+  border: none;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+.active__wrapper {
+  border-left: 1px solid rgba(128, 128, 128, 0.293);
+  padding: 32px 0px 32px 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.active__header {
+  color: white;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.active__quiet {
+  text-align: center;
+  margin-bottom: 8px;
+  width: 100%;
+  color: white;
+}
+
+.active__para {
+  text-align: center;
+  color: RGB(155, 159, 166);
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .active__wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .creation {
+    display: none;
+  }
+
+  .add__friend {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .friends__listWrapper {
+    height: 76vh;
+  }
+
+  .hotbar__wrapper {
+    display: none;
+  }
+}

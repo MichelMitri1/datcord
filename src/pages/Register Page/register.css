@@ -1,0 +1,117 @@
+.register__container {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.register__wrapper {
+  flex-direction: column;
+  display: flex;
+  max-width: 450px;
+  height: 100%;
+  max-height: 600px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 12px;
+  background-color: RGB(49, 51, 56);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.register__title {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.register__nameTitle,
+.register__emailTitle,
+.register__usernameTitle,
+.register__passwordTitle {
+  color: RGB(177, 182, 189);
+  font-weight: bolder;
+  margin: 8px 0px;
+}
+
+.register__nameInput,
+.register__emailInput,
+.register__usernameInput,
+.register__passwordInput {
+  width: 100%;
+  max-width: 380px;
+  height: 40px;
+  background-color: RGB(30, 31, 34);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.register__toggleBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.register__box,
+.register__boxChecked {
+  width: 100%;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+.register__boxChecked {
+  background-color: RGB(88, 101, 242);
+}
+
+.register__togglePara {
+  color: RGB(143, 148, 154);
+  font-size: 12px;
+}
+
+.register__button {
+  color: white;
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: RGB(88, 101, 242);
+  margin-top: 12px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: 150ms all ease;
+  cursor: pointer;
+}
+
+.register__button:hover {
+  background-color: rgb(62, 74, 203);
+}
+
+.register__button:active {
+  background-color: rgb(52, 62, 170);
+}
+
+.register__termsOfUse {
+  color: RGB(143, 148, 154);
+  font-size: 12px;
+}
+
+.termsOfService,
+.privacyPolicy,
+.existingAccount {
+  color: RGB(6, 153, 226);
+  text-decoration: none;
+  font-size: 13px;
+}
